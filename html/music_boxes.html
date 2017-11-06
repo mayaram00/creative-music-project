@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <head>
+      <title>Creative Music Project</title>
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="../js/play.js"></script>
+   </head>
+   <body>
+   		<audio id="a-note">
+   			<source src="../audio/a_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/a_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/a_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="b-note">
+   			<source src="../audio/b_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/b_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/b_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="c-note">
+   			<source src="../audio/c_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/c_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/c_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="d-note">
+   			<source src="../audio/d_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/d_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/d_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="e-note">
+   			<source src="../audio/e_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/e_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/e_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="f-note">
+   			<source src="../audio/f_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/f_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/f_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<audio id="g-note">
+   			<source src="../audio/g_note.mp3" type="audio/mpeg"></source>
+   			<source src="../audio/g_note.ogg" type="audio/ogg"></source>
+   			<source src="../audio/g_note.wav" type="audio/wav"></source>
+   		</audio>
+   		<h1> NOTES &#9835; </h1>
+
+   		<div id="instrument">
+   			<div id="c" class="box" onmouseover="playNote(this)" onclick="recordNote(this)" draggable="true" ondrag="dragNote(this)"></div>
+   			<div id="d" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   			<div id="e" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   			<div id="f" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   			<div id="g" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   			<div id="a" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   			<div id="b" class="box" onmouseover="playNote(this)" onclick="recordNote(this)"></div>
+   		</div>
+
+   		<div id="record-info">
+   			<button id="record" class="record-button" onclick="toggleRecording(this)"></button>
+   			<button id="stop" class="stop-button" onclick="toggleRecording(this)">&#9632;</button>
+   			<button id="play" class="play-button" onclick="playRecording()"> &#9654;</button>
+   		</div>
+
+   		<div id="recording">
+
+   		</div>
+      
+   </body>
+</HTML>
