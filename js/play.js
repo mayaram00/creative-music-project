@@ -43,7 +43,7 @@ function playRecording() {
 function dragNote(note) {
 	var noteAudio = document.getElementById(note.id + "-note");
 	var box = '<div id="' + note.id + '" class="box dragged"></div>';
-	box.addEventListener('drag', drag, false);
+	noteAudio.addEventListener('drag', drag, false);
 	document.body.addEventListener('dragover',dragOver,false);
 	document.body.addEventListener('drop',drop,false); 
 	//create a small version 
